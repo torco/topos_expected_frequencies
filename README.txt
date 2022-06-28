@@ -1,4 +1,4 @@
-ToposFreq is a library that automatically highlights the most topical words in a given large text. it supports English, Spanish, French, Italian, German, Arabic, Chinese, Japanese and Russian. It is a technique for determining term frequency not based on tf-idf, but rather, on tf/cf. 
+Topos expected frequencies is a library that automatically highlights the most topical words in a given large text. it supports English, Spanish, French, Italian, German, Arabic, Chinese, Japanese and Russian. It is a technique for determining term frequency not based on tf-idf, but rather, on tf/cf. 
 
 HOW TO USE
 
