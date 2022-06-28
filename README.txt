@@ -2,25 +2,32 @@ ToposFreq is a library that automatically highlights the most topical words in a
 
 HOW TO USE
 
-topos_dfcf(text, language, num)
+get_keywords(text, language, num)
 
-text(string): the text you want ToposFreq to examine.
+text(string): the text you want Topos to examine.
 
 language(string): it admits 
 'ara'	arabic
 'zh'	chinese
 'en'	english
 'es'	spanish
+'fr'  french
+'de'  german
+'it'  italian
+'ja'  japanese
+'ru'  russian
 
+num: an int representing how many terms you want topos to output. 
 
+the function will produce output in the form of a pandas dataframe.
 
-The corpuses were obtained from Sharov(2006):
+The corpuses were obtained mostly from from Sharov(2006):
 http://corpus.leeds.ac.uk/frqc/
 
-Spanish was originally to be obtained from the CREA corpus published by the RAE, but in the end Sharov's dataset proved easier to use. still, it's here
+Spanish was sourced from the CREA corpus put together by the Real Academia Española
 https://www.rae.es/banco-de-datos/crea
 
-#############################
+##############   rationale   ###############
 
 Typically, topic modeling (broadly speaking, answering the question of *what a bunch of text is about*) is done with variations of Latent Semantic Analysis. This alternative model shares the base intuition that if a document or set of documents are about a certain topic, then it's rational to expect some words to be more frequent in it that they otherwise would be. Thus, the count of a word in natural language produced by human beings, or a text, is a relevant indicator of the topicality of that text.
 
