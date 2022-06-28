@@ -1,10 +1,13 @@
-Topos expected frequencies is a library that automatically highlights the most topical words in a given large text. it supports English, Spanish, French, Italian, German, Arabic, Chinese, Japanese and Russian. It is a technique for determining term frequency not based on tf-idf, but rather, on tf/cf. 
+Topos expected frequencies is a library that automatically highlights the most topical words in a given large text. it supports English, Spanish, French, Italian, German, Arabic, Chinese, Japanese and Russian. It is a technique for determining term frequency not based on tf-idf, but rather, on term frequency over expected frequency. 
 
-HOW TO USE
+##############    HOW TO USE    ############################
 
-get_keywords(text, language, num)
+<i would recommend downloading and installing the tarball, but you could also download the source and just import the package locally>
 
-text(string): the text you want Topos to examine.
+import topos_ef.topos.topos_ef as topos
+topos.get_keywords(text, language, num)
+
+text(string): the text you want Topos to examine. it does the best with relatively large texts. you don't need to split it into documents, as it analized the text and internally compares it with frequency lists for whatever language you tell it to. 
 
 language(string): it admits 
 'ara'	arabic
@@ -27,7 +30,7 @@ http://corpus.leeds.ac.uk/frqc/
 Spanish was sourced from the CREA corpus put together by the Real Academia Española
 https://www.rae.es/banco-de-datos/crea
 
-##############   rationale   ###############
+##############    RATIONALE AND EXPLANATION   ##############
 
 Typically, topic modeling (broadly speaking, answering the question of *what a bunch of text is about*) is done with variations of Latent Semantic Analysis. This alternative model shares the base intuition that if a document or set of documents are about a certain topic, then it's rational to expect some words to be more frequent in it that they otherwise would be. Thus, the count of a word in natural language produced by human beings, or a text, is a relevant indicator of the topicality of that text.
 
