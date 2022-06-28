@@ -80,5 +80,5 @@ def get_keywords(text, language, num=10):
 def hi():
     print('hi hi')
     
-b = get_keywords('que tenemos las habilidades. no sólo las que nos encontramos buscando sino también las que podemos ir a ver.', 'es', 10)
+#b = get_keywords('que tenemos las habilidades. no sólo las que nos encontramos buscando sino también las que podemos ir a ver.', 'es', 10)
 #a = get_keywords('notice the xxxx,theres around you as they appear in your consciousnes. direct your attention to whatever sensations you can feel.', 'en')
