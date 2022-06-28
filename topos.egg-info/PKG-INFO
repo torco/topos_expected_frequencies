@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: topos
+Version: 0.1
+Summary: An non tf-idf based algorythm to extract topically relevant keywords
+Home-page: url
+Author: Tomás Boncompte
+Author-email: tsboncompte@gmail.com
+License: GNU3
+Platform: UNKNOWN
+License-File: licence.txt
+
+UNKNOWN
+

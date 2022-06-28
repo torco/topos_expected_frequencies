@@ -1,0 +1,10 @@
+README.txt
+licence.txt
+setup.py
+topos/__init__.py
+topos/topos_ef.py
+topos.egg-info/PKG-INFO
+topos.egg-info/SOURCES.txt
+topos.egg-info/dependency_links.txt
+topos.egg-info/requires.txt
+topos.egg-info/top_level.txt
