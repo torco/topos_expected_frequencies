@@ -1,10 +1,10 @@
-Topos expected frequencies is a library that automatically highlights the most topical words in a given large text. it supports English, Spanish, French, Italian, German, Arabic, Chinese, Japanese and Russian. It is a technique for determining term frequency not based on tf-idf, but rather, on term frequency over expected frequency. 
+Topos expected frequencies is a library that automatically highlights the most topical words in a given large text. it supports English, Spanish, French, Italian, German, Arabic, Chinese, Japanese and Russian. It is a technique for determining term prominence not based on tf-idf, but rather, on term frequency over expected frequency, the expected frequency being how common a word is in a reference corpus for the language. It helps to quickly identify topically-relevant terms in large sets of text. 
 
 ##############    HOW TO USE    ############################
 
-<i would recommend downloading and installing the tarball, but you could also download the source and just import the package locally>
+Easiest way is to download the "topos" folder, paste it into your working directory and then just import it as
 
-import topos_ef.topos.topos_ef as topos
+from topos import topos_ef as topos
 topos.get_keywords(text, language, num)
 
 text(string): the text you want Topos to examine. it does the best with relatively large texts. you don't need to split it into documents, as it analized the text and internally compares it with frequency lists for whatever language you tell it to. 
